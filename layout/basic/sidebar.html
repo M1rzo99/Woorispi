@@ -1,0 +1,45 @@
+<aside id="aside" module="layout_slidePackage" data-ez="contents-0q58a59-1">
+    <!--@css(/layout/basic/css/slideMenu.css)-->
+    <!--@js(/layout/basic/js/slide_menu.js)-->
+    <nav class="navigation-menu" role="navigation">
+		<div module="Layout_multishopList">
+			<button type="button" class="toggle">{$current_language} <i aria-hidden="true" class="icon icoArrowRight"></i></button>
+			<ul module="Layout_multishopListitem">
+				<li class="{$selected_class}">
+					<a href="//{$shop_domain}/">{$locale_language}</a>
+				</li>
+				<li class="{$selected_class}">
+					<a href="//{$shop_domain}/">{$locale_language}</a>
+				</li>
+			</ul>
+		</div><!-- //Layout_multishopList -->
+
+		<div class="navigation_state" data-ez-group="top-util-menu" data-ez-role="list">
+			<a data-ez-item="join" module="Layout_statelogoff" href="/member/agreement.html" style="font-weight: bold;">회원가입</a>
+			<a data-ez-item="login" module="Layout_statelogoff" href="/member/login.html" style="font-weight: bold;">로그인</a>
+			<a data-ez-item="modify" module="Layout_stateLogon" href="/member/modify.html">내정보수정</a>
+			<a data-ez-item="logout" module="Layout_stateLogon" href="{$action_logout}">로그아웃</a>
+			<a data-ez-item="order" href="/myshop/order/list.html" style="font-weight: bold;">주문조회</a>
+			<a data-ez-item="mypage" module="Layout_stateLogon" href="/myshop/index.html">마이페이지</a>
+			<a data-ez-item="recent" href="/product/recent_view_product.html" style="font-weight: bold;">최근본상품</a>
+		</div><!-- //navigation_state -->
+
+		<div class="tab_inner">
+			<a class="open" id="slide_category" href="javascript:;">카테고리</a>
+			<a id="slide_community" href="javascript:;">고객센터</a>
+		</div><!-- //tab_inner -->
+
+		<div data-ez-module="menu-side/1"><div id="slideCateList" class="navigation-menu__category">
+  <ul id="slide_add_category"><li><a href="/category/%EC%95%BC%EC%99%B8%EC%9A%B4%EB%8F%99%EA%B8%B0%EA%B5%AC/43/" class="view">야외운동기구</a></li><li><a href="/category/%EC%B2%B4%EC%9C%A1%EA%B4%80%EA%B8%B0%EA%B5%AC/44/" class="view">체육관기구</a></li><li><a href="/category/%EA%B5%AC%EA%B8%B0%EA%B8%B0%EA%B5%AC/45/" class="view">구기기구</a></li><li><a href="/category/%EB%B3%B4%ED%98%B8%C2%B7%EC%95%88%EC%A0%84%EB%A7%A4%ED%8A%B8/46/" class="view">보호·안전매트</a></li><li><a href="/category/%EC%B8%A1%EC%A0%95%EC%9E%A5%EB%B9%84/47/" class="view">측정장비</a></li><li><a href="/category/%ED%95%99%EA%B5%90%EC%B2%B4%EC%9C%A1%EA%B5%90%EA%B5%AC/54/" class="view">학교체육교구</a><ul class="sub_cate01"><li><a href="https://woorispi.tistory.com/" class="view">Woori Tstory</a></li></ul></li></ul>
+  </div></div><!-- //menu-side/1 -->
+
+        <div module="Layout_BoardInfo" class="tab_community navigation-menu__board">
+            <ul>
+                <li><a href="{$link_board_list}">{$board_name}</a> {$board_adult_icon}</li>
+                <li><a href="{$link_board_list}">{$board_name}</a> {$board_adult_icon}</li>
+            </ul>
+        </div><!-- //tab_community -->
+    </nav>
+    <button type="button" class="btnClose"><i aria-hidden="true" class="icon icoClose"></i>닫기</button>
+</aside>
+<!--#ez="1/44"-->
